@@ -24,6 +24,8 @@ public class EnhancedFood {
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
+    public static final String MOD_ID = "enhancedfood";
+
     public EnhancedFood() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup); // Register the setup method for modloading
         FMLJavaModLoadingContext.get().getModEventBus().addListener(this::doClientStuff); // Register the doClientStuff method for modloading
@@ -39,14 +41,5 @@ public class EnhancedFood {
     private void doClientStuff(final FMLClientSetupEvent event) {
         // do something that can only be done on the client
         LOGGER.info("Got game settings {}", event.getMinecraftSupplier().get().gameSettings);
-    }
-
-    @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
-    public static class RegistryEvents {
-        @SubscribeEvent
-        public static void onBlocksRegistry(final RegistryEvent.Register<Block> blockRegistryEvent) {
-            // register a new block here
-            LOGGER.info("HELLO from Register Block");
-        }
     }
 }
