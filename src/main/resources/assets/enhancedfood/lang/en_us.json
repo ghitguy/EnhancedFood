@@ -1,3 +1,5 @@
 {
-  "item.enhancedfood.knife": "Knife"
+  "item.enhancedfood.knife": "Knife",
+  "item.enhancedfood.salt": "Salt",
+  "block.enhancedfood.salt_ore": "Salt Ore"
 }

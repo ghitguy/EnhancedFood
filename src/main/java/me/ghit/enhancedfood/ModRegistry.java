@@ -1,5 +1,6 @@
 package me.ghit.enhancedfood;
 
+import me.ghit.enhancedfood.init.BlockListEF;
 import me.ghit.enhancedfood.init.ItemListEF;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
@@ -14,12 +15,19 @@ public class ModRegistry {
 
     @SubscribeEvent
     public static void onBlockRegistry(RegistryEvent.Register<Block> event) {
-
+        event.getRegistry().register(BlockListEF.SALT_ORE);
     }
 
     @SubscribeEvent
     public static void onItemRegistry(RegistryEvent.Register<Item> event) {
+        // Tools
         event.getRegistry().register(ItemListEF.KNIFE);
+
+        // Foods
+        event.getRegistry().register(ItemListEF.SALT);
+
+        // ItemBlocks
+        event.getRegistry().register(ItemListEF.SALT_ORE);
     }
 
 }

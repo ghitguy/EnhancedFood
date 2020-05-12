@@ -1,4 +1,4 @@
-package me.ghit.enhancedfood.init;
+package me.ghit.enhancedfood.init.bases.items;
 
 import me.ghit.enhancedfood.EnhancedFood;
 import net.minecraft.item.Item;

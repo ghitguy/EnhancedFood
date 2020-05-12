@@ -1,5 +1,6 @@
 package me.ghit.enhancedfood;
 
+import me.ghit.enhancedfood.world.OreGeneratorEF;
 import net.minecraft.block.Block;
 import net.minecraft.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -34,8 +35,7 @@ public class EnhancedFood {
     }
 
     private void setup(final FMLCommonSetupEvent event) {
-        // some preinit code
-        LOGGER.info("HELLO FROM PREINIT");
+        OreGeneratorEF.setupOregen();
     }
 
     private void doClientStuff(final FMLClientSetupEvent event) {

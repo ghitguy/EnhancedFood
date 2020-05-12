@@ -1,4 +1,4 @@
-package me.ghit.enhancedfood.init;
+package me.ghit.enhancedfood.init.bases.items;
 
 import me.ghit.enhancedfood.EnhancedFood;
 import net.minecraft.item.Item;
@@ -7,8 +7,8 @@ import net.minecraft.item.ItemTier;
 import net.minecraft.item.SwordItem;
 import net.minecraft.util.ResourceLocation;
 
-public class WeaponItemEF extends SwordItem {
-    public WeaponItemEF(String name, int attackDamage, int attackSpeed) {
+public class ToolItemEF extends SwordItem {
+    public ToolItemEF(String name, int attackDamage, int attackSpeed) {
         super(
                 ItemTier.IRON,
                 attackDamage - 3 /* For some reason, MC likes adding 3 */,
